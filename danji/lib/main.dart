@@ -3,6 +3,12 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:shared_preferences.dart';
 
+void main() {
+  runApp(MaterialApp(
+    home: AudioPlayerApp(),
+  ));
+}
+
 class AudioPlayerApp extends StatefulWidget {
   @override
   _AudioPlayerAppState createState() => _AudioPlayerAppState();
@@ -125,7 +131,7 @@ class _AudioPlayerAppState extends State<AudioPlayerApp> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('选择蓝牙设备'),
+        title: Text('选��蓝牙设备'),
         content: Container(
           height: 300,
           width: double.maxFinite,
